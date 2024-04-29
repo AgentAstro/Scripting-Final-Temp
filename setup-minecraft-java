@@ -48,7 +48,7 @@ sudo su - minecraft -s /bin/bash << 'EOF'
 	cd /usr/local/games/minecraft_server/java;
 
 	# Accept EULA
-	#sed -i 's/\bfalse\b/TRUE/' ./eula.txt;
+	sed -i 's/\bfalse\b/TRUE/' ./eula.txt;
 
 	# Init Again
 	java -Xmx1024M -Xms1024M -jar ./server.jar nogui &
