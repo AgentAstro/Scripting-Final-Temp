@@ -5,7 +5,7 @@
 
 sudo su << 'EOF'
 
-	apt-get update && apt --fix-broken install -y && apt dist-upgrade -y;
+	apt-get update && apt --fix-broken install -y && apt full-upgrade -y;
 	
 	# Install some extensions, essential os tools, personalize gnome shell
 
