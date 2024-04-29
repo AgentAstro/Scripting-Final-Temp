@@ -28,14 +28,14 @@ while true; do
 		[Nn]* ) break;;
 		* ) echo "Please choose yes or no.";;
 	esac
-done
+done;
 
-while true; do
-	read -p "Do you want to install Minecraft Server Bedrock? " yn
-	case $yn in 
-		[Yy]* ) wget https://raw.githubusercontent.com/AgentAstro/Scripting-Final-Temp/main/setup-minecraft-java -O ./setup-minecraft-java; chmod +x ./setup-minecraft-java; sudo ./setup-minecraft-bed; break;;
-		[Nn]* ) break;;
-		* ) echo "Please choose yes or no.";;
-	esac
-done
+# while true; do
+# 	read -p "Do you want to install Minecraft Server Bedrock? " yn
+# 	case $yn in 
+# 		[Yy]* ) wget https://raw.githubusercontent.com/AgentAstro/Scripting-Final-Temp/main/setup-minecraft-java -O ./setup-minecraft-java; chmod +x ./setup-minecraft-java; sudo ./setup-minecraft-bed; break;;
+# 		[Nn]* ) break;;
+# 		* ) echo "Please choose yes or no.";;
+# 	esac
+# done
 
