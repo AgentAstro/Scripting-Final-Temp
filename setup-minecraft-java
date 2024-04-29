@@ -38,6 +38,15 @@ sudo su - minecraft -s /bin/bash << 'FOE'
 	# Init Java
 	java -Xmx1024M -Xms1024M -jar ./server.jar nogui;
 
+	exit
+
+FOE
+
+
+sudo su - minecraft -s /bin/bash << 'FOE'
+
+	cd /usr/local/games/minecraft_server/java;
+	
 	# Accept EULA
 	sed -i 's/\bfalse\b/TRUE/' ./eula.txt;
 
