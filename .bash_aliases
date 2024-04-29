@@ -1,6 +1,5 @@
-# List of Harvard"s Bash Aliases
+# Bash Aliases For Easier Command Line usage.
 
-#alias if="ifconfig"
 alias screen="sudo screen"
 # Navigation
 ## Change Directory
@@ -60,7 +59,8 @@ alias branch="git branch"
 alias checkout="git checkout"
 alias diff="git diff"
 alias merge="git merge"
-# Grep
+
+# Grep Personalization
 alias grep="grep --color=auto"
 alias egrep="egrep --color=auto"
 alias fgrep="fgrep --color=auto"
@@ -83,7 +83,6 @@ alias iptlistfw="sudo /sbin/iptables -L FORWARD -n -v --line-numbers"
 alias firewall=iptlist
 
 # Safety Nets
-
 ## Move Shortcuts
 alias mv="mv -i"
 alias smv="sudo mv -i"
@@ -95,7 +94,6 @@ alias srm="sudo rm -I --preserve-root"
 alias srmr="sudo rm -r -I --preserve-root"
 
 ## Copy Shortcuts
-
 alias cp="cp -i"
 alias cpr="cp -r -i"
 alias sucp="sudo cp -i"
@@ -114,7 +112,6 @@ alias schmod="sudo chmod --preserve-root"
 alias schgrp="sudo chgrp --preserve-root"
 
 # System Monitoring
-
 ## pass options to free ##
 alias meminfo="free -m -l -t"
  
@@ -136,10 +133,3 @@ alias cpuinfo="lscpu"
 alias gpumeminfo="grep -i --color memory /var/log/Xorg.0.log"
 
 
-# Application Launchers
-
-alias Hopper="sudo /opt/hopper-v4/bin/Hopper"
-alias bindiff="sudo /opt/bindiff/bin/bindiff"
-alias ghidra="sudo /opt/ghidra_10.2.2_PUBLIC/ghidraRun"
-alias ghidra1="sudo /opt/ghidra_10.1.5_PUBLIC/ghidraRun"
-alias ida="sudo /opt/idafree-8.1/ida64"
