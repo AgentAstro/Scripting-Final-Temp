@@ -19,14 +19,22 @@ wget -q https://raw.githubusercontent.com/AgentAstro/Scripting-Final-Temp/main/.
 
 source ~/.bash_aliases;
 
+# Ask the user if they want to install minecraft
+
 
 while true; do
 	read -p "Do you want to install Minecraft Server Java? " yn
 	case $yn in 
-		[Yy]* ) wget https://raw.githubusercontent.com/AgentAstro/Scripting-Final-Temp/main/setup-minecraft-java -O ./setup-minecraft-java; chmod +x ./setup-minecraft-java; sudo ./setup-minecraft-java; echo -e "Minecraft has been installed with default settings\n"; break;;
+		[Yy]* ) wget https://raw.githubusercontent.com/AgentAstro/Scripting-Final-Temp/main/setup-minecraft-java -O ./setup-minecraft-java; chmod +x ./setup-minecraft-java; sudo ./setup-minecraft-java; break;;
 		[Nn]* ) break;;
 		* ) echo "Please choose yes or no.";;
 	esac
 done
+
+echo -e "Minecraft has been installed with default settings\n"
+firewall-cmd --permanent --zone=public --add-port 25565/tcp;
+firewall-cmd --permanent --zone=public --add-port 25565/udp;
+firewall-cmd --reload
+echo -e "Minecraft user created. Standard Minecraft port "25565" has been opened on host system
 
 

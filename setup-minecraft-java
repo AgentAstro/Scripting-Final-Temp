@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Credit for most of this portion of the script goes to [Mincraft-Server-Tutorial](https://www.cherryservers.com/blog/minecraft-server-ubuntu)
+# Credit for a portion of the script goes to [Mincraft-Server-Tutorial](https://www.cherryservers.com/blog/minecraft-server-ubuntu) with some adjustments made by myself
 
 # Prepare system for minecraft server
 # Temporarily switch to root
@@ -15,12 +15,6 @@ sudo su << 'EOF'
 
 	# Set permissions
 	chown -R minecraft: /usr/local/games/minecraft_server/;
-
-	firewall-cmd --permanent --zone=public --add-port 25565/tcp;
-	firewall-cmd --permanent --zone=public --add-port 25565/udp;
-	firewall-cmd --reload
-
-	echo -e "Minecraft user created. Standard Minecraft port "25565" has been opened on host system
 
 EOF;
 
@@ -46,5 +40,16 @@ sudo su - minecraft -s /bin/bash << 'EOF'
 EOF;
 
 
+# After installation, Open firewall
+
+sudo su << 'EOF'
+
+	echo -e "Minecraft has been installed with default settings\n"
+	firewall-cmd --permanent --zone=public --add-port 25565/tcp;
+	firewall-cmd --permanent --zone=public --add-port 25565/udp;
+	firewall-cmd --reload
+	echo -e "Minecraft user created. Standard Minecraft port "25565" has been opened on host system
+
+EOF
 
 
