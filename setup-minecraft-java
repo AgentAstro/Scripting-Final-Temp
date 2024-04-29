@@ -45,8 +45,6 @@ sudo su - minecraft -s /bin/bash << 'EOF'
 	screen -S mc_java_server -dm java -Xmx1024M -Xms1024M -jar server.jar nogui;
 EOF;
 
-firewall-cmd --permanent --add-port 25565/tcp
-firewall-cmd --permanent --add-port 25565/udp
 
 
 
