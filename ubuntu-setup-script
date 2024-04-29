@@ -31,11 +31,3 @@ while true; do
 	esac
 done;
 
-while true; do
-	read -p "Do you want to install Minecraft Server Bedrock? " yn
-	case $yn in 
-		[Yy]* ) wget https://raw.githubusercontent.com/AgentAstro/Scripting-Final-Temp/main/setup-minecraft-bedrock -O ./setup-minecraft-bedrock; chmod +x ./setup-minecraft-bedrock; sudo ./setup-minecraft-bedrock; break;;
-		[Nn]* ) break;;
-		* ) echo "Please choose yes or no.";;
-	esac
-done
