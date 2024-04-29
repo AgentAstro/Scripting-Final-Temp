@@ -10,7 +10,7 @@ sudo su << 'EOF'
 	# Install some extensions, essential os tools, personalize gnome shell
 
 	apt install -y build-essential git net-tools gnome-shell gnome-tweaks gnome-shell-extension-appindicator gnome-shell-extension-gsconnect gnome-shell-extension-gsconnect-browsers gnome-shell-extension-manager gnome-shell-extensions gdb wine wine64 curl binwalk hexcurse cppcheck clang clang-tools cargo afl++ snap htop vim python3 python3-pip openjdk-21-jre-headless screen firewalld g++;
-	apt autoremove -y;
+	apt autoremove;
 
 	snap install code --classic -y;
 EOF
