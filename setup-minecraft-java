@@ -42,10 +42,10 @@ sudo su - minecraft -s /bin/bash << 'FOE'
 	sed -i 's/\bfalse\b/TRUE/' ./eula.txt;
 
 	# Init Again
-	java -Xmx1024M -Xms1024M -jar ./server.jar nogui & ;
+	java -Xmx1024M -Xms1024M -jar ./server.jar nogui &
 
 	# Launch the Server
-	screen -S mc_java_server -dm java -Xmx1024M -Xms1024M -jar ./server.jar nogui & ;
+	screen -S mc_java_server -dm java -Xmx1024M -Xms1024M -jar ./server.jar nogui & 
 FOE
 
 
