@@ -5,7 +5,6 @@
 # Prepare system for minecraft server
 # Temporarily switch to root
 
-
 # Create Java Server Home Folder
 sudo su << 'EOF'
 
@@ -32,7 +31,7 @@ sudo su - minecraft -s /bin/bash << 'EOF'
 	java -Xmx1024M -Xms1024M -jar server.jar nogui;
 
 	#Accept EULA
-	#sed -i 's/\bfalse\b/TRUE/' eula.txt;
+	sed -i 's/\bfalse\b/TRUE/' eula.txt;
 
 	# Init Again
 	java -Xmx1024M -Xms1024M -jar server.jar nogui;

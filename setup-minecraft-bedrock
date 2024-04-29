@@ -1,12 +1,20 @@
 #!/bin/bash
 
 # Create Minecraft Usr
-wget https://raw.githubusercontent.com/AgentAstro/Scripting-Final-Temp/main/create-minecraft-usr -O ./create-minecraft-usr;
-chmod +x ./create-minecraft-usr;
-./create-minecraft-usr;
+sudo su << 'EOF'
 
+	# Create a minecraft user
+	useradd -r -U -d /usr/local/games/minecraft_server/ -s /usr/sbin/nologin minecraft;
+
+	# Create Minecraft Bedrock Server Folder
+	mkdir -p /usr/local/games/minecraft_server/bedrock;
+
+	# Set permissions
+	chown -R minecraft: /usr/local/games/minecraft_server/;
+EOF;
 
 # Download Bedrock Server
+
 cd /tmp;
 wget https://minecraft.azureedge.net/bin-linux/bedrock-server-1.20.80.05.zip;
 
