@@ -8,7 +8,7 @@ sudo su << 'EOF'
 	# Create a minecraft user
 	useradd -r -U -d /usr/local/games/minecraft_server/ -s /usr/sbin/nologin minecraft;
 
-	# Create Minecraft Java Server Folder
+	# Create Minecraft Server Home Folder
 	mkdir -p /usr/local/games/minecraft_server/;
 
 	# Set permissions

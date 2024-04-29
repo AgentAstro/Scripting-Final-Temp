@@ -5,9 +5,12 @@
 # Prepare system for minecraft server
 # Temporarily switch to root
 
+# Create Minecraft User
+wget https://raw.githubusercontent.com/AgentAstro/Scripting-Final-Temp/main/create-minecraft-usr -O ./create-minecraft-usr;
+chmod +x ./create-minecraft-usr;
+./create-minecraft-usr;
 
-wget 
-
+# Create Java Server Home Folder
 sudo su << 'EOF'
 	# Create Minecraft Java Server Folder
 	mkdir -p /usr/local/games/minecraft_server/java;
