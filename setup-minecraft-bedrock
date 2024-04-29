@@ -22,7 +22,16 @@ wget https://minecraft.azureedge.net/bin-linux/bedrock-server-1.20.80.05.zip;
 # Extract and fix permissions
 sudo su << 'EOF'
 
-	unzip -d /usr/local/games/minecraft_server/bedrock ./bedrock-server-1.20.80.05.zip
-	chown -R minecraft: /usr/local/games/minecraft_server/
+	unzip -d /usr/local/games/minecraft_server/bedrock ./bedrock-server-1.20.80.05.zip;
+	chown -R minecraft: /usr/local/games/minecraft_server/;
+
+EOF;
+
+sudo su - minecraft -s /bin/bash << 'EOF'
+
+	cd bedrock
+	echo -e "#!/bin/bash\nLD_LIBRARY_PATH=. ./bedrock_server" >> launch_mc_bedrock_server.sh;
+	chmod +x ./launch_mc_bedrock_server.sh;
+	screen -S mc_bedrock_server ./launch_mc_bedrock.sh;
 
 EOF
