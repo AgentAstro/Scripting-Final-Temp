@@ -9,7 +9,7 @@ sudo su << 'EOF'
 
 	# Install some extensions, essential os tools, personalize gnome shell
 
-	apt install -y build-essential git net-tools gnome-shell gnome-tweaks gnome-shell-extension-appindicator gnome-shell-extension-gsconnect gnome-shell-extension-gsconnect-browsers gnome-shell-extension-manager gnome-shell-extensions gdb wine wine64 curl binwalk hexcurse cppcheck clang clang-tools cargo afl++ snap htop vim python3 python3-pip default-jre-headless;
+	apt install -y build-essential git net-tools gnome-shell gnome-tweaks gnome-shell-extension-appindicator gnome-shell-extension-gsconnect gnome-shell-extension-gsconnect-browsers gnome-shell-extension-manager gnome-shell-extensions gdb wine wine64 curl binwalk hexcurse cppcheck clang clang-tools cargo afl++ snap htop vim python3 python3-pip default-jre-headless screen firewalld g++;
 
 	snap install code --classic
 EOF
@@ -19,7 +19,19 @@ wget -q https://raw.githubusercontent.com/AgentAstro/Scripting-Final-Temp/main/.
 
 source ~/.bash_aliases;
 
-# Install vscode
 
-# Next I set up a minecraft server and run it
+while true; do
+	read -p "Do you want to install Minecraft Server Java? " yn
+	case $yn in 
+		[Yy]* ) wget https://raw.githubusercontent.com/AgentAstro/Scripting-Final-Temp/main/setup-minecraft-java -O ./setup-minecraft-java; chmod +x ./setup-minecraft-java; sudo ./setup-minecraft-java; break;;
+		[Nn]* ) exit;;
+		* ) echo "Please choose yes or no.";;
+	esac
+done
+
+# Install/Setup a Minecraft Server
+
+
+
+chmod +x ./setup-minecraft-java
 
