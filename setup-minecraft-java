@@ -5,18 +5,18 @@
 # Prepare system for minecraft server
 # Temporarily switch to root
 
+
+wget 
+
 sudo su << 'EOF'
-
-	# Create a minecraft user
-	useradd -r -U -d /usr/local/games/minecraft_server/ -s /usr/sbin/nologin minecraft;
-
 	# Create Minecraft Java Server Folder
 	mkdir -p /usr/local/games/minecraft_server/java;
 
 	# Set permissions
 	chown -R minecraft: /usr/local/games/minecraft_server/;
-
 EOF;
+
+
 
 # Switch to minecraft user and begin installation
 
