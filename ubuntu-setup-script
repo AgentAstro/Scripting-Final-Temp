@@ -13,6 +13,7 @@ sudo su << 'EOF'
 	apt autoremove;
 
 	snap install code --classic;
+	exit
 
 EOF
 
