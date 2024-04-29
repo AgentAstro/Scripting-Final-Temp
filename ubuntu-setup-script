@@ -12,7 +12,7 @@ sudo su << 'EOF'
 	apt install -y build-essential git net-tools gnome-shell gnome-tweaks gnome-shell-extension-appindicator gnome-shell-extension-gsconnect gnome-shell-extension-gsconnect-browsers gnome-shell-extension-manager gnome-shell-extensions gdb wine wine64 curl binwalk hexcurse cppcheck clang clang-tools cargo afl++ snap htop vim python3 python3-pip openjdk-21-jre-headless screen firewalld g++;
 	apt autoremove;
 
-	snap install code --classic -y;
+	snap install code --classic;
 
 EOF
 
@@ -29,6 +29,13 @@ while true; do
 		[Nn]* ) break;;
 		* ) echo "Please choose yes or no.";;
 	esac
+done;
+
+while true; do
+	read -p "Do you want to install Minecraft Server Bedrock? " yn
+	case $yn in 
+		[Yy]* ) wget https://raw.githubusercontent.com/AgentAstro/Scripting-Final-Temp/main/setup-minecraft-bedrock -O ./setup-minecraft-bedrock; chmod +x ./setup-minecraft-bedrock; sudo ./setup-minecraft-bedrock; break;;
+		[Nn]* ) break;;
+		* ) echo "Please choose yes or no.";;
+	esac
 done
-
-

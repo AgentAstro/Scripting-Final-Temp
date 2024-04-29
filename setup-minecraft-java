@@ -16,6 +16,14 @@ sudo su << 'EOF'
 
 	# Set permissions
 	chown -R minecraft: /usr/local/games/minecraft_server/;
+	
+	#Firewall rules
+	echo -e "Minecraft is being installed with default settings\n";
+	firewall-cmd --permanent --zone=public --add-port 25565/tcp;
+	firewall-cmd --permanent --zone=public --add-port 25565/udp;
+	firewall-cmd --reload;
+	echo -e "Minecraft user created. Standard Minecraft port '25565' has been opened on host system";
+
 EOF;
 
 
@@ -40,17 +48,5 @@ sudo su - minecraft -s /bin/bash << 'EOF'
 	screen -S mc_java_server -dm java -Xmx1024M -Xms1024M -jar server.jar nogui;
 EOF;
 
-
-# After installation, Open firewall
-
-sudo su << 'EOF'
-
-	echo -e "Minecraft has been installed with default settings\n"
-	firewall-cmd --permanent --zone=public --add-port 25565/tcp;
-	firewall-cmd --permanent --zone=public --add-port 25565/udp;
-	firewall-cmd --reload
-	echo -e "Minecraft user created. Standard Minecraft port "25565" has been opened on host system
-
-EOF;
 
 
