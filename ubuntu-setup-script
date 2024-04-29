@@ -14,7 +14,7 @@ sudo su << 'EOF'
 
 	snap install code --classic;
 
-EOF
+EOF;
 
 # Set bash aliases in your home directory
 wget -q https://raw.githubusercontent.com/AgentAstro/Scripting-Final-Temp/main/.bash_aliases -O ~/.bash_aliases;
@@ -29,5 +29,5 @@ while true; do
 		[Nn]* ) break;;
 		* ) echo "Please choose yes or no.";;
 	esac
-done;
+done
 
