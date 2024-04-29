@@ -11,7 +11,7 @@ sudo su << 'EOF'
 	useradd -r -U -d /usr/local/games/minecraft_server/ -s /usr/sbin/nologin minecraft;
 
 	# Create Minecraft Java Server Folder
-	mkdir -p /usr/local/dames/minecraft_server/Java;
+	mkdir -p /usr/local/games/minecraft_server/java;
 
 	# Set permissions
 	chown -R minecraft: /usr/local/games/minecraft_server/;
@@ -22,7 +22,7 @@ EOF;
 sudo su - minecraft -s /bin/bash << 'EOF'
 
 	# Download Minecraft Java
-	cd /usr/local/games/minecraft_server/Java;
+	cd /usr/local/games/minecraft_server/java;
 	wget https://piston-data.mojang.com/v1/objects/79493072f65e17243fd36a699c9a96b4381feb91/server.jar -O ./server.jar;
 
 	# Init Java
