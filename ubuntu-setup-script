@@ -32,10 +32,4 @@ while true; do
 	esac
 done
 
-echo -e "Minecraft has been installed with default settings\n"
-firewall-cmd --permanent --zone=public --add-port 25565/tcp;
-firewall-cmd --permanent --zone=public --add-port 25565/udp;
-firewall-cmd --reload
-echo -e "Minecraft user created. Standard Minecraft port "25565" has been opened on host system
-
 
