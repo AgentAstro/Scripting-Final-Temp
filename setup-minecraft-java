@@ -36,7 +36,7 @@ sudo su - minecraft -s /bin/bash << 'FOE'
 	wget https://piston-data.mojang.com/v1/objects/79493072f65e17243fd36a699c9a96b4381feb91/server.jar -O ./server.jar;
 
 	# Init Java
-	java -Xmx1024M -Xms1024M -jar ./server.jar nogui;
+	java -Xmx1024M -Xms1024M -jar ./server.jar nogui
 
 FOE
 
