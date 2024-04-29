@@ -1,0 +1,14 @@
+ 1 #!/bin/bash
+ 2
+ 3 # Update OS
+ 4 sudo apt-get update && sudo apt --fix-broken install -y && sudo apt dist-upgrade -y;
+ 5
+ 6 # Install some extensions, essential os tools, personalize gnome shell
+ 7 sudo apt install -y build-essential git net-tools gnome-shell gnome-shell-extension-appindicator>
+ 8
+ 9 # Set bash aliases in your home directory
+10 wget -q https://raw.githubusercontent.com/AgentAstro/Scripting-Final-Temp/main/.bash_aliases -O >
+11 source ~/.bash_aliases;
+12
+13 # Install vscode
+14 sudo snap install code --classic;
