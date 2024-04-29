@@ -9,14 +9,15 @@ sudo su << 'EOF'
 
 	# Install some extensions, essential os tools, personalize gnome shell
 
-	apt install -y build-essential git net-tools gnome-shell gnome-tweaks gnome-shell-extension-appindicator gnome-shell-extension-gsconnect gnome-shell-extension-gsconnect-browsers gnome-shell-extension-manager gnome-shell-extensions gdb wine wine64 curl binwalk hexcurse cppcheck clang clang-tools cargo afl++ snap htop vim python3 python3-pip openjdk-21-jre-headless screen firewalld g++ unzip;
+	apt install -y build-essential git net-tools gnome-shell gnome-tweaks gnome-shell-extension-appindicator gnome-shell-extension-gsconnect gnome-shell-extension-gsconnect-browsers gnome-shell-extension-manager gnome-shell-extensions gdb wine wine64 curl binwalk hexcurse cppcheck clang clang-tools cargo afl++ snap htop vim python3 python3-pip openjdk-21-jre-headless screen firewalld g++;
 	apt autoremove;
 
 	snap install code --classic -y;
-EOF
+EOF;
 
 # Set bash aliases in your home directory
 wget -q https://raw.githubusercontent.com/AgentAstro/Scripting-Final-Temp/main/.bash_aliases -O ~/.bash_aliases;
+
 source ~/.bash_aliases;
 
 # Ask the user if they want to install minecraft
@@ -27,14 +28,6 @@ while true; do
 		[Nn]* ) break;;
 		* ) echo "Please choose yes or no.";;
 	esac
-done;
+done
 
-# while true; do
-# 	read -p "Do you want to install Minecraft Server Bedrock? " yn
-# 	case $yn in 
-# 		[Yy]* ) wget https://raw.githubusercontent.com/AgentAstro/Scripting-Final-Temp/main/setup-minecraft-java -O ./setup-minecraft-java; chmod +x ./setup-minecraft-java; sudo ./setup-minecraft-bed; break;;
-# 		[Nn]* ) break;;
-# 		* ) echo "Please choose yes or no.";;
-# 	esac
-# done
 

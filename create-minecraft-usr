@@ -14,4 +14,4 @@ sudo su << 'EOF'
 	# Set permissions
 	chown -R minecraft: /usr/local/games/minecraft_server/;
 
-EOF;
+EOF
