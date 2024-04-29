@@ -11,6 +11,8 @@ sudo su << 'EOF'
 
 	# Set permissions
 	chown -R minecraft: /usr/local/games/minecraft_server/;
+
+
 EOF;
 
 # Download Bedrock Server
@@ -34,4 +36,4 @@ sudo su - minecraft -s /bin/bash << 'EOF'
 	chmod +x ./launch_mc_bedrock_server.sh;
 	screen -S mc_bedrock_server ./launch_mc_bedrock.sh;
 
-EOF
+EOF;
