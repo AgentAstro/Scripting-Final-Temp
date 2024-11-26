@@ -1,0 +1,241 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../Scripting-Net-Admin"
+		}
+	],
+	"settings": {
+		"editor.tokenColorCustomizations": {
+			"comments": "#ffffffff"
+		},
+		"cSpell.userWords": [
+			"Biba",
+			"cookiecorp",
+			"Cyberattacks",
+			"dxcb",
+			"Hasher",
+			"Higbie",
+			"Honomichl",
+			"hotspot",
+			"Hotspot",
+			"Interoperation",
+			"Limon",
+			"marp",
+			"Nondiscretionary",
+			"Padula",
+			"passlib",
+			"Plex",
+			"Santoyo",
+			"Yael"
+		],
+		
+		// Editor Settings
+		"editor.unicodeHighlight.includeComments": true,
+		"explorer.confirmDragAndDrop": false,
+		"explorer.confirmDelete": false,
+		"diffEditor.renderSideBySide": false,
+		"editor.quickSuggestions": {
+			"other": "on",
+			"comments": "off",
+			"strings": "off"
+		},
+		"markdown.preview.fontSize": 10,
+		// Markdown Extension
+		"markdown.extension.tableFormatter.normalizeIndentation": true,
+		"markdown.extension.toc.slugifyMode": "github",
+		"markdown.extension.print.onFileSave": false,
+		"markdown.extension.toc.updateOnSave": false,
+		"markdown.extension.toc.orderedList": true,
+		// Markdown Extended
+		"markdownExtended.exportOutDirName": "",
+		"markdownExtended.pdfDisplayHeaderFooter": true,
+		"markdownExtended.pdfFooterTemplate": "<div style=\"font-size: 9px; margin: 0 auto;\"> <span class='pageNumber'></span> / <span class='totalPages'></span></div>",
+		"markdownExtended.puppeteerExecutable": "/usr/bin/google-chrome",
+		"markdownTablePrettify.showWindowMessages": false,
+		"markdownTablePrettify.extendedLanguages": [
+			"html",
+			"markdown",
+			"css",
+			"less"
+		],
+		// Yaml Settings
+		"yaml.disableAdditionalProperties": false,
+		// HTML/CSS Stuff
+		"html-css-class-completion.CSSLanguages": [
+			"css",
+			"sass",
+			"scss",
+			"less"
+		],
+		"html-css-class-completion.HTMLLanguages": [
+			"html",
+			"vue",
+			"razor",
+			"blade",
+			"handlebars",
+			"twig",
+			"django-html",
+			"php",
+			"markdown"
+		],
+		"html-css-class-completion.JavaScriptLanguages": [
+			"javascript",
+			"javascriptreact",
+			"typescriptreact"
+		],
+		"[html]": {
+			"editor.defaultFormatter": "vscode.html-language-features"
+		},
+		"markdown.marp.pdf.noteAnnotations": false,
+		"editor.wordWrap": "on",
+		"editor.wordWrapColumn": 100,
+		"editor.formatOnSave": false,
+		"diffEditor.codeLens": true,
+		"workbench.colorTheme": "Noctis Obscuro",
+		"editor.bracketPairColorization.enabled": true,
+		"editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+		"editor.guides.bracketPairs": "active",
+		"editor.hover.delay": 200,
+		"editor.linkedEditing": true,
+		"editor.tabCompletion": "on",
+		"editor.cursorStyle": "underline",
+		"editor.formatOnPaste": true,
+		"editor.minimap.maxColumn": 100,
+		"editor.minimap.showSlider": "always",
+		"html.format.indentHandlebars": true,
+		"html.format.indentInnerHtml": true,
+		"extensions.ignoreRecommendations": true,
+		"css.completion.completePropertyWithSemicolon": false,
+		"css.format.spaceAroundSelectorSeparator": true,
+		"cssPeek.peekFromLanguages": [
+			"html",
+			"django-html",
+			"laravel-blade",
+			"razor",
+			"vue",
+			"blade",
+			"pug",
+			"jade",
+			"handlebars",
+			"php",
+			"twig",
+			"md",
+			"nunjucks",
+			"javascript",
+			"javascriptreact",
+			"erb",
+			"typescript",
+			"typescriptreact",
+			"HTML (Eex)",
+			"html-eex",
+			"ejs",
+			"markdown"
+		],
+		"markdownlint.config": {
+			"MD001": false,
+			"MD010": false,
+			"MD012": false,
+			"MD013": false,
+			"MD024": false,
+			"MD025": false,
+			"MD033": false,
+			"MD036": false,
+			"MD051": false,
+			"MD029": false
+		},
+		"markdown.preview.scrollEditorWithPreview": false,
+		"markdown.preview.scrollPreviewWithEditor": false,
+		"markdownExtended.pdfLandscape": false,
+		"[markdown]": {
+			"editor.formatOnSave": true,
+			"editor.formatOnPaste": true,
+		},
+		"editor.codeActionsOnSave": {
+			"source.fixAll.markdownlint": "never"
+		},
+		"markdown.preview.breaks": true,
+		"markdown.extension.math.enabled": true,
+		"markdown.extension.preview.autoShowPreviewToSide": false,
+		"markdownEnhanced.attrs.enable": true,
+		"markdownEnhanced.mark.enable": true,
+		"files.autoSave": "afterDelay",
+		"markdownEnhanced.theme": "light",
+		"markdown.preview.doubleClickToSwitchToEditor": false,
+		"markdown.preview.markEditorSelection": true,
+		"markdown.preview.typographer": true,
+		"cSpell.words": [
+			"exfiltrate",
+			"Exfiltration",
+			"Kuiper",
+			"laravel",
+			"Nikto",
+			"Nmap",
+			"Pandoc",
+			"pdflatex",
+			"pentest",
+			"pentesting",
+			"revealjs",
+			"semimajor",
+			"Wireshark"
+		],
+		"nasm.checkOnType": true,
+		"nasm.nasmPath": "/usr/bin/nasm",
+		"nasm.reportWarnings": false,
+		"workbench.settings.useSplitJSON": false,
+		"nasm.validate": false,
+		"liveServer.settings.useLocalIp": true,
+		"markdown.extension.print.imgToBase64": true,
+		"markdown.extension.print.includeVscodeStylesheets": false,
+		"markdown.extension.syntax.plainTheme": false,
+		"markdownEnhanced.mermaid.enable": true,
+		"markdown.math.enabled": false,
+		"markdown-preview-enhanced.automaticallyShowPreviewOfMarkdownBeingEdited": false,
+		"markdown-preview-enhanced.codeBlockTheme": "auto.css",
+		"markdown-preview-enhanced.enableExtendedTableSyntax": true,
+		"markdown-preview-enhanced.enableHTML5Embed": true,
+		"markdown-preview-enhanced.enableCriticMarkupSyntax": true,
+		"markdown-preview-enhanced.hideDefaultVSCodeMarkdownPreviewButtons": false,
+		"markdown-preview-enhanced.singlePreview": false,
+		"markdown.updateLinksOnFileMove.enabled": "always",
+		"markdown.styles": [
+			"/home/harvard/Documents/My-Entire-Life/Year-IV/intro-to-AI/labs/Lab_11/styles.css"
+		],
+		"markdown.marp.chromePath": "/usr/bin/google-chrome",
+		"files.associations": {
+			"ostream": "cpp",
+			"array": "cpp",
+			"string_view": "cpp",
+			"initializer_list": "cpp",
+			"utility": "cpp"
+		},
+		"editor.renderLineHighlight": "none",
+		"editor.guides.highlightActiveBracketPair": false,
+		"markdown.occurrencesHighlight.enabled": true,
+		"markdown.extension.toc.levels": "2..6",
+		"markdown.extension.toc.omittedFromToc": {
+			"Midterm.md": [
+				"# CSC 432 | Midterm | Harvard Limon"
+			]
+		},
+		"markdownAutoTOC.header": true,
+		"markdownExtended.tocLevels": [
+			2,
+			3
+		],
+		"markdownExtended.pdfHeaderTemplate": "<div> </div>",
+		"editor.fontSize": 13,
+		"editor.accessibilityPageSize": 18,
+		"workbench.editor.empty.hint": "hidden",
+		"markdown-mermaid.languages": [
+			"mermaid"
+		],
+		"markdown.marp.enableHtml": true,
+		"liveServer.settings.multiRootWorkspaceName": "Scripting-Net-Admin",
+		"markdown.extension.print.theme": "light",
+		"markdown.extension.completion.enabled": true,
+		"powershell.cwd": "Scripting-Net-Admin",
+	}
+}
