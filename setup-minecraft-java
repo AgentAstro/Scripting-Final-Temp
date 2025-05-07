@@ -8,6 +8,9 @@
 
 # Create Java Server Home Folder
 sudo su << 'EOF'
+
+	apt install openjdk-21-jre-headless curl wget grep
+
 	# Create a minecraft user
 	useradd -r -U -d /usr/local/games/minecraft_server/ -s /usr/sbin/nologin minecraft;
 
@@ -31,9 +34,11 @@ EOF
 
 sudo su - minecraft -s /bin/bash << 'FOE'
 
+	DOWNLOAD_URL=$(curl -H "Accept-Encoding: identity" -H "Accept-Language: en" -s -L -A "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; JAVA-UPDATER)" https://www.minecraft.net/en-us/download/server | grep -o 'https.*server\.jar');
+
 	# Download Minecraft Java
 	cd /usr/local/games/minecraft_server/java;
-	wget https://piston-data.mojang.com/v1/objects/79493072f65e17243fd36a699c9a96b4381feb91/server.jar -O ./server.jar;
+	wget -U "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; JAVA-UPDATER)" $DOWNLOAD_URL -O ./server.jar;
 
 	# Init Java
 	java -Xmx1024M -Xms1024M -jar ./server.jar nogui &
